@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Add Doctor</title>
+    <link rel="stylesheet" href="../bootstrap 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap 4/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/StyleDoctor.css">
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-mattBlackLight fixed-top">
+
+      <button class="navbar-toggler sideMenuToggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="#">Hospital</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle navbar-linkk p-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="text">Account</span>
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right"
+              aria-labelledby="navbarDropdown"
+            >
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="wrapper d-flex">
+      <div class="sideMenu bg-mattBlackLight">
+        <div class="sidebar">
+          <ul class="navbar-nav">
+
+
+            <div class="image">
+              <img src="../image/doctor-icon-avatar-white_136162-58.jpg"  alt="" width="80px" height="80px">
+              <div class="contact">
+                <p>Obada Kahlous</p>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-facebook"></i>
+              </div>
+            </div>
+
+            <li class="nav-item active">
+              <a href="HomePageDoctor.html" class="nav-link px-2  ">
+                <i class="fa fa-hospital-o"></i>
+                <span class="text">Home</span>
+              </a>
+            </li>
+
+            <li class="nav-item active">
+              <a href="new-Visit.html" class="nav-link px-2 active" >
+                <i class="fa fa-user"></i>
+                <span class="text">New Visit</span>
+              </a>
+            </li>
+
+            
+            
+
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <main>
+          <div class="container doc">
+                <form action="" method="">
+
+                    <div class="form-group">
+                        <label for="text">Clinic</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Clinic" name="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="text">Patient</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Patient" name="text">
+                    </div>
+
+                </form>
+                <a href="Add-medicine-measurement.html"><button class="btn btn-info btn-block">  ADD VISIT </button></a>
+                
+          </div>
+        </main>
+      </div>
+    </div>
+
+
+    <script src="../bootstrap 4/js/jquery-3.5.1.js"></script>
+    <script src="../bootstrap 4/js/popper.min.js"></script>
+    <script src="../bootstrap 4/js/bootstrap.min.js"></script>
+    <script src="../Javascript/script.js"></script>
+  </body>
+</html>

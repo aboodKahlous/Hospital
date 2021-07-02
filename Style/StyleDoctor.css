@@ -1,0 +1,132 @@
+/*
+color
+#00ac96
+#1167b1
+#2a9df4
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+}
+
+.sideMenu .image{
+    border-bottom: 2px solid #fff ;
+    margin-bottom: 10px;
+    display: flex;
+}
+.sideMenu .image img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px 10px 20px 5px;
+    display: inline;
+}
+.sideMenu .image .contact{
+    color: #fff;
+    display: inline;
+}
+.sideMenu .image .contact p{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: -8px;
+    font-size: 15px;
+}
+.sideMenu .image p::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: green;
+}
+.sideMenu .image .contact i{
+    text-align: center;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-right: 4px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.content .dashboard{
+    margin-top: 40px;
+}
+.content .dashboard .count{
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #fff;
+    
+}
+.content .dashboard .count i {
+    color: #1167b1;
+    font-size: 48px;
+}
+.content .dashboard .count h3 {
+    color: #444;
+    font-size: 33px;
+    margin-bottom: -5px;
+}
+.content .dashboard .count p {
+    color: #444;
+    font-size: 20px;
+    margin-top: -5px;
+}
+.content .dashboard .count .number {
+    color: #444;
+    font-size: 40px;
+}
+
+.content .doc{
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    padding: 40px;
+    border-radius: 20px;
+}
+.content .doc label{
+    color: #333;
+}
+.content .doc button{
+    border: none;
+    background-color: rgb(248, 29, 29);
+    color: #fff;
+    border: 1px solid rgb(248, 29, 29);
+    transition: all 0.4s ease-in;
+}
+.content .doc:hover{
+    background-color: #fff;
+    color: rgb(252, 39, 39);
+}
+
+.content .doc:focus{
+    outline: none;
+}
+.content .doc a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*************************************************************/
+.buttons main{
+    margin-top: 40px;
+}
+.buttons main button{
+    width: 80%;
+    margin: auto;
+    border: none;
+    background-color: rgb(248, 29, 29);
+    color: #fff;
+    border: 1px solid rgb(248, 29, 29);
+    transition: all 0.4s ease-in;
+}
+.content button:hover{
+    background-color: #fff;
+    color: rgb(252, 39, 39);
+}
+.content button:focus{
+    outline: none;
+}

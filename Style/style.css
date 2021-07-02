@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Courgette");
+* {
+  font-family: 'Poppins', sans-serif;
+}
+/*
+color
+#00ac96
+#1167b1
+#2a9df4
+
+*/
+.bg-mattBlackLight {
+  background-color: #1167b1;
+  z-index: 2;
+}
+
+.text-mattBlackLight {
+  color: #fff;
+}
+
+.bg-mattBlackDark, body, .nav-link:hover, .nav-link.active {
+  background-color: #fff;
+}
+
+.text-mattBlackDark {
+  color: #1167b1;
+}
+
+.bg-mattGray {
+  background-color: #fff;
+}
+
+.text-mattGray, body, .nav-link .icon, .nav-link .text {
+  color: #878d8d;
+}
+
+.bg-mattRed {
+  background-color: #ec6271;
+}
+
+.text-mattRed, .nav-link:hover i,
+.nav-link:hover .text, .nav-link.active .icon,
+.nav-link.active .text {
+  color: #2a9df4;
+}
+
+.sideMenu {
+  background-color: #1167b1;
+}
+.wrapper {
+  margin-top: 3.5rem;
+}
+
+.wrapper .sideMenu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 3.5rem auto auto;
+  left: 0;
+  width: 12.5rem;
+  transition: all ease 0.25s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  z-index: 2000;
+}
+
+.wrapper .content {
+  width: 100%;
+  margin-left: 0rem;
+  -webkit-transition: all ease 0.25s;
+  transition: all ease 0.25s;
+}
+
+.wrapper.active .sideMenu {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav-link:not(.navbar-linkk) {
+  transition: all 0.2s ease-in;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  padding: 8px;
+  align-items: center;
+  display: block;
+  white-space: nowrap;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.nav-link .navbar-linkk {
+  color: #333;
+}
+
+.nav-link i {
+  margin-right:12px;
+  font-size: 18px;
+  display: inline-flex; 
+  color: #fff;
+}
+.nav-item .active i{
+  background-color: #fff;
+  color: #2a9df4;
+}
+.nav-link a{
+  padding: 10px;
+}
+.nav-link .text {
+  color: #fff;
+}
+
+button.navbar-toggler.sideMenuToggler:focus {
+  outline: none;
+}
+button.navbar-toggler.collapsed:focus {
+  outline: none;
+}
+@media (min-width: 992px) {
+  .wrapper .sideMenu {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .wrapper .content {
+    margin-left: 12.5rem;
+  }
+  .wrapper.active .sideMenu {
+    width: 5rem;
+  }
+  .wrapper.active .sideMenu .nav-link {
+    text-align: center;
+  }
+  .wrapper.active .sideMenu .nav-link .icon {
+    margin-right: 0;
+  }
+  .wrapper.active .sideMenu .nav-link .text {
+    display: none;
+  }
+  .wrapper.active .content {
+    margin-left: 5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+
+/*****************************  Form  ****************************/
+main .doctor{
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  border-bottom: 2px solid #ddd;
+}
+main .doctor img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+@media (max-width : 1150px){
+  main .doctor img{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+}
+main .doctor h3{
+  position: relative;
+  color: #333;
+  font-weight: 700;
+  margin-top: 40px;
+}
+main .doctor h3::before {
+  content: "";
+  background: #2a9df4;
+  width: 130px;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  left: 46%;
+  top: 35px;
+  margin-bottom: 5px;
+  transform: translateX(-50%);
+}
+main .doctor label{
+  color: #555; 
+  font-size: 16px;
+}
+main .doctor .form-control{
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  height: auto;
+  background-color: #fff;
+  color: #333;
+  background-clip: border-box;
+  position: relative;
+}
+main .doctor .form-control:focus{
+  outline: 0;
+  box-shadow: none;
+}
+main .doctor .acount{
+  margin-top: 12px;
+  color: #666;
+}
+main .doctor .acount a{
+  color: #00ac96;
+  text-decoration: none;
+}
+
+main .table{
+  margin-top: 40px;
+}
+
+/*************************************** modal *****************************************/
+
+.modal form .form-control:focus{
+  outline: 0;
+  box-shadow: none;
+}

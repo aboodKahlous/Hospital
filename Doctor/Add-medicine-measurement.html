@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Add Doctor</title>
+    <link rel="stylesheet" href="../bootstrap 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap 4/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/StyleDoctor.css">
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-mattBlackLight fixed-top">
+
+      <button class="navbar-toggler sideMenuToggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="#">Hospital</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle navbar-linkk p-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="text">Account</span>
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right"
+              aria-labelledby="navbarDropdown"
+            >
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="wrapper d-flex">
+      <div class="sideMenu bg-mattBlackLight" style="z-index: 1;">
+        <div class="sidebar">
+          <ul class="navbar-nav">
+
+
+            <div class="image">
+              <img src="../image/doctor-icon-avatar-white_136162-58.jpg"  alt="" width="80px" height="80px">
+              <div class="contact">
+                <p>Obada Kahlous</p>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-facebook"></i>
+              </div>
+              
+            </div>
+
+            <li class="nav-item active">
+              <a href="HomePageDoctor.html" class="nav-link px-2">
+                <i class="fa fa-hospital-o"></i>
+                <span class="text">Home</span>
+              </a>
+            </li>
+
+            <li class="nav-item active">
+              <a href="new-Visit.html" class="nav-link px-2">
+                <i class="fa fa-user"></i>
+                <span class="text">New Visit</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="content buttons">
+        <main>
+              <button type="button" class=" btn-block btn-lg" data-toggle="modal" data-target="#Add-medicine">Add-medicine</button>
+              <button type="button" class=" btn-block btn-lg" data-toggle="modal" data-target="#Add-measurement">Add-measurement</button>
+        </main>
+      </div>
+    </div>
+
+
+
+   
+
+      
+  
+         <!----------------- Modal For Add-medicine  ------------------------>
+         <div class="modal fade" id="Add-medicine" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Add-Medicine</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+
+                        <div class="form-group">
+                            <label for="Username">MED Name</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="User Name" name="name">
+                        </div>
+                        <div class="form-group">
+                          <label for="Username">Start Date</label>
+                          <input type="date" class="form-control form-control-sm" placeholder="Number" name="Sdate">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Stop Date</label>
+                            <input type="date" class="form-control form-control-sm" placeholder="permenant illness" name="Stopdate">
+                        </div>
+
+                        <i class="fa fa-hospital-o"></i>
+                        <div class="form-group">
+                          <label for="option"> When to take the medicine </label>
+                          <select name="qq" id="query" class="form-control" onchange="fuck(this.value)">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                          </select>
+                        </div>
+                          <div class="form-group">
+                          
+                            <div class="container">
+                              <div class="row" id='5ra'>
+                                <!--isset($_GET['quan']) ? (int)$_GET['quan']-->
+                              </div>
+                              <script>
+                                  
+                              </script>
+                              <!-- <div class="form-group">
+                              <input type="time" name="medicine_time">
+                              </div> -->
+                            </div>    
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Add-Medicine</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!----------------- Modal For Add measurement  ------------------------>
+         <div class="modal fade" id="Add-measurement" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Add-measurement</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+
+                        <div class="form-group">
+                            <label for="Username">User Name</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="User Name" name="name">
+                        </div>
+                        <div class="form-group">
+                          <label for="Username">Number</label>
+                          <input type="text" class="form-control form-control-sm" placeholder="Number" name="numb">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">permenant illness</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="permenant illness" name="textt">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Date</label>
+                          <input type="date" class="form-control form-control-sm" placeholder="Date" name="date">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Add-measurement</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    <script src="../bootstrap 4/js/jquery-3.5.1.js"></script>
+    <script src="../bootstrap 4/js/popper.min.js"></script>
+    <script src="../bootstrap 4/js/bootstrap.min.js"></script>
+    <script src="../Javascript/script.js"></script>
+  </body>
+</html>
